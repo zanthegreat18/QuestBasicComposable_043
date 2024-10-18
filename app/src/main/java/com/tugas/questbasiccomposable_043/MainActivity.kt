@@ -97,7 +97,7 @@ fun BasicCompose(modifier: Modifier = Modifier) {
             painter = painterResource(id = R.drawable.ojan),
             contentDescription = null,
             modifier = Modifier
-                .size(400.dp)
+                .size(310.dp)
                 .clip(CircleShape),
         )
     }
