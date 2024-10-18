@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.tugas.questbasiccomposable_043.ui.theme.QuestBasicComposable_043Theme
 import org.w3c.dom.Text
@@ -28,7 +29,7 @@ class MainActivity : ComponentActivity() {
             QuestBasicComposable_043Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     BasicCompose(
-                        Fauzan = Modifier.padding(innerPadding).fillMaxSize(),
+                        modifier = Modifier.padding(innerPadding),
                     )
 
                 }
@@ -38,16 +39,26 @@ class MainActivity : ComponentActivity() {
 }
 @preview(showBackground = true)
 @Composable
-fun BasicCompose(Fauzan: Modifier = Modifier){
+fun BasicCompose(modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.Center,
         modifier = Modifier.fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(text = "Login" , modifier = Fauzan,
-            fontSize = 60.sp,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = "Indonesia",
+            modifier = modifier,
+            fontSize = 70.sp,
+            color = Color.Red,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = "Ini Halaman Login",
+            modifier = modifier,
+            fontSize = 20.sp,
             color = Color.Black,
-            fontWeight = FontWeight.Bold)
-
+            fontWeight = FontWeight.Bold
+        )
     }
 }
 
