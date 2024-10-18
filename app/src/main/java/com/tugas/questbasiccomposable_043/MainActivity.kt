@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
             QuestBasicComposable_043Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     BasicCompose(
-                        modifier = Modifier.padding(innerPadding),
+                        modifier = Modifier,
                     )
 
                 }
@@ -41,14 +41,15 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun BasicCompose(modifier: Modifier = Modifier) {
     Column(
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
         modifier = Modifier
-            .fillMaxSize(),
+            .fillMaxSize()
+            .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "Indonesia",
-            modifier = modifier,
+            modifier = modifier.padding(bottom = 8.dp),
             fontSize = 70.sp,
             color = Color.Red,
             fontWeight = FontWeight.Bold
@@ -62,6 +63,7 @@ fun BasicCompose(modifier: Modifier = Modifier) {
         )
     }
 }
+
 
 
 annotation class preview(val showBackground: Boolean)
