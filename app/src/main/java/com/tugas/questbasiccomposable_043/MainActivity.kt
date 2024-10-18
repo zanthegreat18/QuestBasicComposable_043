@@ -77,9 +77,16 @@ fun BasicCompose(modifier: Modifier = Modifier) {
         )
         Text(
             text = "Muhammad Fauzan",
-            modifier = modifier.padding(bottom = 8.dp),
+            modifier = modifier.padding(bottom = 4.dp),
             fontSize = 19.sp,
             color = Color.Red,
+            fontWeight = FontWeight.Bold,
+        )
+        Text(
+            text = "202201400043",
+            modifier = modifier,
+            fontSize = 19.sp,
+            color = Color.Black,
             fontWeight = FontWeight.Bold,
         )
 
