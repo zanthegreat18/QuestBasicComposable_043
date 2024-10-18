@@ -41,8 +41,9 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun BasicCompose(modifier: Modifier = Modifier) {
     Column(
-        verticalArrangement = Arrangement.Center,
-        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = Modifier
+            .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
@@ -61,6 +62,7 @@ fun BasicCompose(modifier: Modifier = Modifier) {
         )
     }
 }
+
 
 annotation class preview(val showBackground: Boolean)
 
