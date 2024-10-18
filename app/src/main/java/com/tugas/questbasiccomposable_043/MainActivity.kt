@@ -89,7 +89,10 @@ fun BasicCompose(modifier: Modifier = Modifier) {
             color = Color.Black,
             fontWeight = FontWeight.Bold,
         )
-
+        Image(painter = painterResource(id = R.drawable.ojan),
+            contentDescription = null,
+            modifier = Modifier.size(170.dp),
+            )
     }
 }
 
