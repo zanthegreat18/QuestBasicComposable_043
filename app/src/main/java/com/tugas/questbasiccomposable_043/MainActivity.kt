@@ -75,6 +75,13 @@ fun BasicCompose(modifier: Modifier = Modifier) {
             color = Color.Black,
             fontWeight = FontWeight.Bold,
         )
+        Text(
+            text = "Muhammad Fauzan",
+            modifier = modifier.padding(bottom = 8.dp),
+            fontSize = 19.sp,
+            color = Color.LightGray,
+            fontWeight = FontWeight.Bold,
+        )
 
     }
 }
